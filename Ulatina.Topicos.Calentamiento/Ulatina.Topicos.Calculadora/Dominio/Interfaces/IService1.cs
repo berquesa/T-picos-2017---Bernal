@@ -10,12 +10,23 @@ namespace Ulatina.Topicos.Calculadora
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]
-    public interface IService1
+    public interface ICalculadoraVector
     {
 
         [OperationContract]
-        string GetData(int value);
+        double Sumar(IEnumerable<double> laLista);
+        [OperationContract]
 
+        double Restar(IEnumerable<double> laLista);
+        [OperationContract]
+
+        double Multiplicar(IEnumerable<double> laLista);
+        [OperationContract]
+
+        double Dividir(IEnumerable<double> laLista);
+        [OperationContract]
+
+        string GetData(int value);
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
