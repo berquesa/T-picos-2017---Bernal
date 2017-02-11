@@ -69,17 +69,20 @@
     <Compile Include="Dominio\Acciones\Multiplicar.cs" />
     <Compile Include="Dominio\Acciones\Restar.cs" />
     <Compile Include="Dominio\Acciones\Sumar.cs" />
+    <Compile Include="Dominio\Especificaciones\Divida.cs" />
+    <Compile Include="Dominio\Especificaciones\Multiplique.cs" />
+    <Compile Include="Dominio\Especificaciones\Reste.cs" />
+    <Compile Include="Dominio\Especificaciones\Sume.cs" />
     <Compile Include="Dominio\Servicios\Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
     <Compile Include="Dominio\Interfaces\IService1.cs" />
+    <Compile Include="Dominio\Validaciones\LaListaContieneAlMenosUnElemento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Dominio\Enumerados\" />
-    <Folder Include="Dominio\Especificaciones\" />
-    <Folder Include="Dominio\Validaciones\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
